@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000;
+  height: 10vh;
+}
+header h1 {
+  color: #fff;
+}
+header .box-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+header .box {
+  margin-left: 5rem;
+}
+header a {
+  margin-left: 4rem;
+  text-decoration: none;
+  color: rgb(241, 234, 234);
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+}
+header a:hover::after {
+  width: 40%;
+}
+header a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: red;
+  transition: 0.5s;
+}
+header i {
+  color: #fff;
+  font-size: 15px;
+  margin-right: 2rem;
+}
+
+body {
+  height: 100vh;
+}
+
+#Boxs .title {
+  text-align: center;
+}
+#Boxs p {
+  color: #fff;
+  font-size: 14px;
+}
+#Boxs h2 {
+  font-size: 32px;
+  margin: 0 5px;
+  color: #fff;
+  display: inline-block;
+}
+#Boxs .box-all {
+  display: flex;
+  flex-wrap: wrap;
+}
+#Boxs .box-all .box {
+  height: 52vh;
+  margin: auto;
+  margin-top: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+#Boxs .box-all .box .box_t {
+  left: 20px;
+  bottom: 20px;
+  position: absolute;
+}
+#Boxs .box-all .box span {
+  font-size: 20px;
+  left: 20px;
+  top: 20px;
+  position: absolute;
+}
+#Boxs .box-all img {
+  max-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+}
+#Boxs .box-all h1, #Boxs .box-all p {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 22px;
+}
+#Boxs .overlay {
+  background-color: #17a2b8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 1s;
+  overflow: hidden;
+  height: 0;
+  text-align: center;
+  border-radius: 15px;
+}
+#Boxs .overlay h1 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 1rem 0;
+}
+#Boxs .overlay p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 1rem 0;
+  font-size: 15px;
+}
+#Boxs .overlay a {
+  color: #17a2b8;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #fff;
+}
+#Boxs .box:hover .overlay {
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  padding-top: 3rem;
+}/*# sourceMappingURL=style.css.map */
